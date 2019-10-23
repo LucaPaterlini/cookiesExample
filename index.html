@@ -16,39 +16,6 @@
           headers: {
             'Accept': '*/',
             'Content-Type': 'application/json',
-            'Cache': 'no-cache'
-          },
-          credentials: 'include',
-        })
-      })
-    </script>
-    <button id="button2">Cookie Read</button>
-    <script type="module" crossorigin>
-      let button = document.getElementById("button2");
-      button.addEventListener('click', () => {
-        const url = "http://192.168.1.101/readcookie";
-        fetch(url, {
-          method: "GET",
-          headers: {
-            'Accept': '*/',
-            'Content-Type': 'application/json',
-            'Cache': 'no-cache'
-          },
-          credentials: 'include',
-        })
-      })
-    </script>
-    <button id="button3">Cookie Delete</button>
-    <script type="module" crossorigin>
-      let button = document.getElementById("button3");
-      button.addEventListener('click', () => {
-        const url = "http://192.168.1.101/deletecookie";
-        fetch(url, {
-          method: "GET",
-          headers: {
-            'Accept': '*/',
-            'Content-Type': 'application/json',
-            'Cache': 'no-cache'
           },
           credentials: 'include',
         })
