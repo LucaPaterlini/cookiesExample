@@ -18,6 +18,7 @@ func TestHandler(w http.ResponseWriter, r *http.Request) {
 		HttpOnly: true,
 		// to be changed it depends on the user
 		SameSite: http.SameSiteNoneMode,
+		Path:"/test",
 		MaxAge: 3600}
 
 	http.SetCookie(w, &c)
